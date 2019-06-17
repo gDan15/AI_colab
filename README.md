@@ -11,3 +11,6 @@ Il s'agit d'un CNN avec 5 layers de convolution et 2 layers dense.
 
 [Différences]
 Il y a néanmoins des différences dans le pré-traitement de l'image.
+
+## Comment démarrer la simulation
+L'AI rentre en jeux automatiquement après avoir appuyé sur le bouton 'Autonome' de l'interface utilisateur. On suppose que le serveur et le modèle sont déjà chargés avant d'avoir démarré le programme Unity.
