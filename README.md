@@ -8,6 +8,7 @@ L'algorithme utilisé est celui de ce tutoriel https://blog.coast.ai/training-a-
 
 [Expliquer plus en détail]
 Il s'agit d'un CNN avec 5 layers de convolution et 2 layers dense.
+[comment]: <> (https://medium.com/technologymadeeasy/the-best-explanation-of-convolutional-neural-networks-on-the-internet-fbb8b1ad5df8)
 
 [Différences]
 Il y a néanmoins des différences dans le pré-traitement de l'image.
