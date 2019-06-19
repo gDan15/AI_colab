@@ -1,4 +1,5 @@
 # Self riding car #
+---
 ## Description des fichiers et répertoires de la repository ##
 Deux ensembles d'images ont été générés, l'un est volumineux (13000 images) et l'autre est relativement léger (1300 images).
 Des entrainements sont effectués sur les deux ensembles d'images afin de voir lequel fournit un modèle donnat des prédictions plus précises.
