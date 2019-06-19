@@ -37,7 +37,7 @@ Pour la deuxième, il s'agissait principalement d'ajuster le nombre d'epochs, st
 Dans les deux cas la fonction *fit_generator* a été utilisée afin d'entraîner le modèle itérativement.
 
 ## Comment démarrer la simulation ##
-Il faut avant tout démarrer le serveur 'Drive' et s'assurer que le bon modèle enregistrer soit chargé.
+Il faut avant tout exécuter le serveur 'Drive' et s'assurer que le bon modèle enregistrer soit chargé.
 ```python
   model = model(load=True, shape=None, checkpoint="checkpoints/short_light.h1_4")
 ```
