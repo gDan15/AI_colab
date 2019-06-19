@@ -1,18 +1,44 @@
-# AI_colab
-## Description des fichiers et répertoires de la repository
+# AI_colab #
+## Description des fichiers et répertoires de la repository ##
 Deux ensembles d'images ont été générés, l'un est volumineux (13000 images) et l'autre est relativement léger (1300 images).
-Des entrainements sont effectués sur les 2 afin de voir lequel fournit un modèle plus précis.
-## Bibliothèques utilisées
-Les bibliothèques de tensorflow.keras ont été utilisées et tensorflow.
-## Algorithme
+Des entrainements sont effectués sur les deux ensembles d'images afin de voir lequel fournit un modèle donnat des prédictions plus précises.
+## Bibliothèques utilisées ##
+Les bibliothèques tensorflow.keras et keras ont été utilisées.
+## Algorithme ##
 L'algorithme utilisé est celui de ce tutoriel https://blog.coast.ai/training-a-deep-learning-model-to-steer-a-car-in-99-lines-of-code-ba94e0456e6a.
 
-[Expliquer plus en détail]
+### Explication ###
 
-Il s'agit d'un CNN avec 5 layers de convolution et 2 layers dense.
+Le modèle de base utilise le modèle CNN avec 5 couches de convolution et 2 couches dense.
 
-[Différences]
-Il y a néanmoins des différences dans le pré-traitement de l'image.
+Nous avons utilisé l'optimiseur 'Adam'.
 
-## Comment démarrer la simulation
-L'AI rentre en jeux automatiquement après avoir appuyé sur le bouton 'Autonome' de l'interface utilisateur. On suppose que le serveur et le modèle ont déjà été exécutés avant d'avoir démarré le programme Unity.
+Voici une représentation de la solution :
+
+![picture alt](https://miro.medium.com/fit/c/1838/551/1*XbuW8WuRrAY5pC4t-9DZAQ.jpeg "Modèle CNN")
+
+Source : https://medium.com/@RaghavPrabhu/understanding-of-convolutional-neural-network-cnn-deep-learning-99760835f148
+
+### Différences ###
+Ils existent plusieurs différences concernant notre solution comparée à la solution du tutoriel. 
+
+Nous avons établi 2 solutions :
+* L'une consiste à modifier le modèle de la solution de base,
+* L'autre consiste à ce concentrer sur les données d'entrées et le prétraitement des images.
+
+Pour la première, le nombre de couches composant le modèle a été réduit à 4 couches.
+
+Pour la deuxième, il s'agissait principalement d'ajuster le nombre d'epochs, steps_per_epoch et la taille du batch.
+
+```python
+  net.fit_generator(_generator(256, X, y), steps_per_epoch=50, epochs=160)
+```
+Dans les deux cas la fonction *fit_generator* a été utilisée afin d'entraîner le modèle itérativement.
+
+## Comment démarrer la simulation ##
+Il faut avant tout démarrer le serveur 'Drive' et s'assurer que le bon modèle enregistrer soit chargé.
+```python
+  model = model(load=True, shape=None, checkpoint="checkpoints/short_light.h1_4")
+```
+Il faut introduire le bon répertoire ainsi que le bon nom de modèle pour l'attribut checkpoint de la fonction model dans le fichier drive.py.
+Une fois l'application Unity lancée, l'utilisateur doit appuyer sur le bouton 'Autonome'. L'intelligence artificielle se lancera toute seule une fois que la simulation de l'application est chargée.
