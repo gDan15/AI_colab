@@ -1,5 +1,3 @@
-
-
 """"
 With admiration for and inspiration from:
     https://github.com/dolaameng/Udacity-SDC_Behavior-Cloning/
