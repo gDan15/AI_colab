@@ -2,7 +2,7 @@ import socketio
 import eventlet
 import base64
 from PIL import Image
-from Model_elaboration import process_image, model, load
+from model_generator import process_image, model, load
 from io import BytesIO
 import numpy as np
 
