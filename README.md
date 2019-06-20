@@ -6,7 +6,18 @@
 Deux ensembles d'images ont été générés, l'un est volumineux (13000 images) et l'autre est relativement léger (1300 images).
 Des entrainements sont effectués sur les deux ensembles d'images afin de voir lequel fournit un modèle donnat des prédictions plus précises.
 ## Bibliothèques utilisées ##
-Les bibliothèques tensorflow.keras et keras ont été utilisées.
+Pour utiliser ce code, il faut installer un certain nombre de librairies.
+Si vous utilisez anaconda, vous pouvez utiliser les commandes suivantes:
+```python console
+conda install -c conda-forge python-socketio
+conda install -c conda-forge eventlet 
+conda install -c anaconda tensorflow 
+conda install -c conda-forge graphviz 
+conda install -c conda-forge pydot 
+conda install -c conda-forge keras 
+```
+
+
 ## Algorithme ##
 L'algorithme utilisé est celui de ce tutoriel https://blog.coast.ai/training-a-deep-learning-model-to-steer-a-car-in-99-lines-of-code-ba94e0456e6a.
 
