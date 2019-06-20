@@ -38,6 +38,15 @@ Pour la deuxième, il s'agissait principalement d'ajuster le nombre d'epochs, st
 ```
 Dans les deux cas la fonction *fit_generator* a été utilisée afin d'entraîner le modèle itérativement.
 
+## Comment créer le modèle ##
+Le modèle peut être crée grâce au fichier *model_generator.py*. Il faut spécifier le répertoire où se trouve le fichier CSV et le dossier contenant les images pour l'entraînement
+```python
+  DATACSV= r'C:\Users\...'
+```
+Il est possible d'utiliser le modèle plus complet avec les 5 couches de convolution et 2 dense en décommentant les lignes respectives sur la classe model
+
+https://github.com/gDan15/AI_colab/blob/d8212ad70c1a1d042890561ca9255199acbfb3d2/model_generator.py#L20
+
 ## Comment démarrer la simulation ##
 Il faut avant tout exécuter le serveur 'Drive' et s'assurer que le bon modèle enregistrer soit chargé.
 ```python
