@@ -1,3 +1,5 @@
+**Auteurs : Juan Sebastian Barrera Vega & Gaétan Guru**
+
 # Self riding car #
 ---
 ## Description des fichiers et répertoires de la repository ##
