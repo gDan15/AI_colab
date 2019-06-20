@@ -21,7 +21,7 @@ Voici une représentation de la solution :
 Source : https://medium.com/@RaghavPrabhu/understanding-of-convolutional-neural-network-cnn-deep-learning-99760835f148
 
 ### Différences ###
-Ils existent plusieurs différences concernant notre solution comparée à la solution du tutoriel. 
+Ils existent plusieurs différences entre notre solution et la solution du tutoriel.
 
 Nous avons établi 2 solutions :
 * L'une consiste à modifier le modèle de la solution de base,
@@ -29,7 +29,7 @@ Nous avons établi 2 solutions :
 
 Pour la première, le nombre de couches composant le modèle a été réduit à 4 couches.
 
-Pour la deuxième, il s'agissait principalement d'ajuster le nombre d'epochs, steps_per_epoch et la taille du batch.
+Pour la deuxième, il s'agissait principalement d'ajuster le nombre d'epochs, steps_per_epoch, la taille du batch et le nombre d'image fournies aux programmes.
 
 ```python
   net.fit_generator(_generator(256, X, y), steps_per_epoch=50, epochs=160)
@@ -41,5 +41,5 @@ Il faut avant tout exécuter le serveur 'Drive' et s'assurer que le bon modèle 
 ```python
   model = model(load=True, shape=None, checkpoint="checkpoints/short_light.h1_4")
 ```
-Il faut introduire le bon répertoire ainsi que le bon nom de modèle pour l'attribut checkpoint de la fonction model dans le fichier drive.py.
+Il faut introduire le bon répertoire ainsi que le bon nom de modèle pour l'attribut checkpoint de la fonction *model* dans le fichier *drive.py*.
 Une fois l'application Unity lancée, l'utilisateur doit appuyer sur le bouton 'Autonome'. L'intelligence artificielle se lancera toute seule une fois que la simulation de l'application est chargée.
