@@ -31,7 +31,7 @@ def telemetry(sid, data):
         
         throttle = 1 - (speed/22)
         sa = model.predict(np.array([image]))[0][0]
-#        print(sa)
+        # print(sa)
         # response to the simulator with a steer angle and throttle
         send(sa, throttle)
     else:
