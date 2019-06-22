@@ -59,7 +59,7 @@ Il est possible d'utiliser le modèle plus complet avec les 5 couches de convolu
 https://github.com/gDan15/AI_colab/blob/d8212ad70c1a1d042890561ca9255199acbfb3d2/model_generator.py#L20
 
 ## Comment démarrer la simulation ##
-Il faut avant tout exécuter le serveur 'Drive' et s'assurer que le bon modèle enregistrer soit chargé.
+Il faut avant tout exécuter le serveur 'Drive' et s'assurer que le bon modèle enregistré soit chargé.
 ```python
   model = model(load=True, shape=None, checkpoint="checkpoints/short_light.h1_4")
 ```
